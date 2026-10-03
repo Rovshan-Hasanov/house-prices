@@ -15,3 +15,4 @@ wheels/
 data/
 test.ipynb
 playground.ipynb
+.env
