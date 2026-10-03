@@ -7,7 +7,9 @@ authors = [
     { name = "Rovshan Hasanov", email = "rhasanov1999@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "numpy>=2.5.3",
+]
 
 [project.scripts]
 house-prices = "house_prices:main"
@@ -15,3 +17,9 @@ house-prices = "house_prices:main"
 [build-system]
 requires = ["uv_build>=0.12.15,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "kaggle>=2.2.4",
+]
